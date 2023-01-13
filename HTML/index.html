@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="/CSS/generator.css">
+
+   
+</head>
+<body>
+
+    <div class="brand">
+         <h1 class="nav-brand" >QRify</h1> 
+    </div>
+
+    <ul class="nav nav-tabs">
+       
+        <div class="options">
+            <li class="nav-item op">
+            <a class="nav-link generate active" aria-current="page" href="index.html">Generator QR</a>
+            </li>
+            <li class="nav-item  ">
+            <a class="nav-link Scan " href="scanner.html">Scan QR</a>
+            </li>
+        </div>
+      </ul>
+    
+    
+    <!-- body of the remaining body -->
+    <div class="wrapper">
+        
+        <!-- TextArea -->
+        <div class="TextareaDiv">
+            <textarea name="data" id="Data" class="textarea" cols="40" rows="10"  placeholder="Enter data here to Generate QR code" ></textarea>
+            <button class="Generate-QR btn" >
+                Generate QR
+            </button>
+        </div>
+
+        <!-- QR section -->
+        <div class="qr">
+            <div class="img">
+                <img  class="qrimage">
+            </div>
+            <div class="imageNameDiv">
+                <input type="text" id="imageName" placeholder="FileName">
+            </div>
+            <button class="Save-QR btn" >
+                Save QR
+            </button>
+        </div>
+
+    </div>
+     <!-- filesaver cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="../index.js"></script>
+</body>
+
+
+</html>
