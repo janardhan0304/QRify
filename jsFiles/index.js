@@ -20,7 +20,7 @@ document.querySelector(".Generate-QR").addEventListener("click",function(){
 //saving the file to the harddisk using the filesaver library
 
 document.getElementsByClassName("Save-QR")[0].addEventListener("click",function (){
-    let imagesrc ="http://api.qrserver.com/v1/create-qr-code/?data="+encodedText+"&size=500x500";
+    let imagesrc ="http://api.qrserver.com/v1/create-qr-code/?data="+encodedText+"&size=150x150";
 
     fetch(imagesrc)
     .then(function(res){
